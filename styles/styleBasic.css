@@ -1,10 +1,17 @@
+:root {
+  --main-color-1: #2bae66ff;
+  --main-color-2: #fcf6f5ff;
+}
+
 #menu {
   border: 1px solid gray;
-  margin-top: 10%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: rgb(233, 233, 125);
+  background-color: rgb(129, 129, 129);
+  overflow: hidden;
+  width: 100%;
+  z-index: 0;
 }
 #menu ul {
   display: flex;
@@ -13,12 +20,12 @@
 #menu li {
   list-style: none;
   margin: 2px 20px;
-  background-color: rgb(255, 123, 0);
-  color: white;
+  background-color: var(--main-color-1);
+  color: var(--main-color-2);
   border-radius: 10px;
   width: 150px;
   text-transform: uppercase;
-  box-shadow: 5px 5px 5px #999;
+  box-shadow: 1px 1px 1px #999;
   text-align: center;
   font-weight: 900;
   transition: 0.5s;
@@ -26,9 +33,9 @@
 }
 
 #menu li:hover {
-  border: 1px solid rgb(255, 123, 0);
-  background-color: white;
-  color: rgb(255, 123, 0);
+  border: 1px solid var(--main-color-1);
+  background-color: var(--main-color-2);
+  color: var(--main-color-1);
   transition: 0.5s;
 }
 /* styling the anchor tag*/
@@ -37,7 +44,9 @@ a {
   color: inherit;
 }
 footer {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
 }
 
 @media all and (max-width: 770px) {

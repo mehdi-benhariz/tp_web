@@ -1,13 +1,18 @@
+:root {
+  --main-color-1: #2bae66ff;
+  --main-color-2: #fcf6f5ff;
+}
 h2 {
   color: black;
-  border-left: 0.7rem solid rgb(255, 123, 0);
+  border-left: 0.7rem solid var(--main-color-1);
   background-color: #999;
   transition: 0.7s;
+  padding: 5px 0;
 }
 /* animating the h2*/
 h2:hover {
   color: black;
-  border-left: 1.7rem solid rgb(255, 123, 0);
+  border-left: 1.7rem solid var(--main-color-1);
   background-color: #999;
   transition: 0.5s;
 }
@@ -30,6 +35,9 @@ section article div {
   border-radius: 2%;
   padding-right: 2%;
   padding-left: 2%;
+  padding: 2px;
+  background: rgb(221, 221, 221);
+  border-radius: 20px;
 }
 
 p {
@@ -43,21 +51,9 @@ aside {
   background: url("/images/pattern.png");
 }
 
-.btn {
-  display: block;
-  float: right;
-  background-color: rgb(255, 123, 0);
-  border-radius: 20%;
-  padding: 8px 10px;
-  border-radius: 10px;
-  font-size: large;
-  font-weight: 400;
-  color: white;
-}
 .btn span {
   cursor: pointer;
   display: inline-block;
-  position: relative;
   transition: 0.5s;
 }
 /* button effect */
@@ -68,6 +64,7 @@ aside {
   top: 0;
   right: -20px;
   transition: 0.5s;
+  position: relative;
 }
 
 .btn:hover span {
@@ -77,4 +74,35 @@ aside {
 .btn:hover span:after {
   opacity: 1;
   right: 0;
+}
+@media screen and (max-width: 750px) {
+  section article div {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color-1);
+
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 400;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 751px) {
+  .btn {
+    display: block;
+    float: right;
+    background-color: var(--main-color-1);
+
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 400;
+    color: white;
+  }
 }
