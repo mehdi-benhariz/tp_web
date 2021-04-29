@@ -1,0 +1,136 @@
+:root {
+  --main-color-1: #2bae66ff;
+  --main-color-2: #fcf6f5ff;
+  --backgroundColor: rgba(246, 241, 209);
+  --colorShadeA: rgb(106, 163, 137);
+  --colorShadeB: rgb(121, 186, 156);
+  --colorShadeC: rgb(189, 252, 223);
+  --colorShadeD: rgb(187, 232, 211);
+  --colorShadeE: rgb(205, 255, 232);
+}
+#card {
+  background-color: rgb(244, 245, 244);
+  border-radius: 20px;
+  padding: 16px;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+#card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: 1.7ms;
+}
+
+form {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 5px;
+}
+
+.input-grp {
+  display: grid;
+  grid-template-rows: auto;
+}
+.input-grp label {
+  color: rgb(56, 56, 56);
+  font-weight: 800;
+  padding-bottom: 0.6rem;
+}
+.input-grp input,
+textarea {
+  border-radius: 20px;
+  padding: 6px 0;
+  caret-color: var(--main-color-1);
+  background-color: rgb(211, 209, 209);
+  outline: none;
+  border: none;
+}
+
+.input-grp input:focus,
+textarea:focus {
+  background-color: transparent;
+  border: 0.2em solid var(--main-color-1);
+  outline: none;
+}
+.input-grp input,
+textarea::-webkit-input-placeholder {
+  font-weight: bold;
+  color: gray;
+  padding-left: 8px;
+}
+/* button animation*/
+#btn-submit {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--colorShadeA);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: inherit;
+
+  padding: 0.8em 1.6em;
+  border: 2px solid var(--colorShadeA);
+  border-radius: 1em;
+  background: var(--colorShadeE);
+  transform-style: preserve-3d;
+  transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+#btn-submit::before {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background: var(--colorShadeC);
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.75em 0 0 var(--colorShadeA);
+  transform: translate3d(0, 0.75em, -1em);
+  transition: all 175ms cubic-bezier(0, 0, 1, 1);
+}
+
+#btn-submit:hover {
+  background: var(--colorShadeD);
+  transform: translate(0, 0.375em);
+}
+
+#btn-submit:hover::before {
+  transform: translate3d(0, 0.75em, -1em);
+}
+
+#btn-submit:active {
+  transform: translate(0em, 0.75em);
+}
+
+#btn-submit:active::before {
+  transform: translate3d(0, 0, -1em);
+
+  box-shadow: 0 0 0 2px var(--colorShadeB), 0 0.25em 0 0 var(--colorShadeB);
+}
+
+@media all and(max-width:900px) {
+  #card {
+    background-color: rgb(15, 240, 15);
+    border-radius: 20px;
+    padding: 16px;
+    margin: 20px;
+    display: grid;
+  }
+}
+
+@media all and(min-width:901px) {
+  #card {
+    background-color: rgb(244, 245, 244);
+    border-radius: 20px;
+    padding: 16px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+}

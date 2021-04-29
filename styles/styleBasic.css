@@ -2,7 +2,9 @@
   --main-color-1: #2bae66ff;
   --main-color-2: #fcf6f5ff;
 }
-
+body {
+  background: rgb(212, 212, 212);
+}
 #menu {
   border: 1px solid gray;
   position: -webkit-sticky;
@@ -12,6 +14,7 @@
   overflow: hidden;
   width: 100%;
   z-index: 0;
+  margin-bottom: 10px;
 }
 #menu ul {
   display: flex;
@@ -44,11 +47,29 @@ a {
   color: inherit;
 }
 footer {
-  display: flex;
+  margin-top: 20px;
+  background-color: var(--main-color-2);
+  display: grid;
+  grid-template-columns: 30% 70%;
   justify-content: center;
-  margin-top: 6%;
+  height: 80px;
+  width: 100%;
 }
-
+footer div {
+  display: flex;
+  align-items: center;
+}
+#intro {
+  flex: 3;
+  color: rgb(36, 36, 36);
+  font-weight: 600;
+  padding-left: 4px;
+}
+#social {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+}
 @media all and (max-width: 770px) {
   section article {
     grid-template-rows: 60% 40%;
