@@ -70,11 +70,62 @@
 
 /*styling the cards*/
 .card {
-  background-color: #282a35;
+  display: grid;
+}
+
+#html .defin h2,
+#html .defin p {
+  color: #ffffff;
+}
+.defin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.example {
+  background-color: #e7e9eb;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* button effect */
+.btn-learn {
+  background-color: var(--main-color-1);
+  padding: 8px 70px;
+
+  border-radius: 10px;
+  font-size: large;
+  font-weight: 400;
+  color: white;
+}
+.btn-learn span {
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.5s;
+}
+.btn-learn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.btn-learn:hover span {
+  padding-right: 25px;
+}
+
+.btn-learn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 /*the media query*/
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
   #techs {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -82,10 +133,15 @@
   }
 }
 
-@media only screen and (min-width: 801px) {
+@media (min-width: 801px) {
   #techs {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
+  }
+}
+@media (min-width: 900px) {
+  .card {
+    grid-template-columns: 50% 50%;
   }
 }

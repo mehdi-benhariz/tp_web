@@ -1,49 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> </head>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styleContact.css" />
+    <link rel="stylesheet" href="/styles/globalStyle.css" />
+    <link rel="shortcut icon" href="/images/logo-1.png  " type="image/x-icon" />
+    <title>Contact</title>
+  </head>
   <body>
-    <header>
-      <link rel="stylesheet" href="/styles/styleContact.css" />
-      <link rel="stylesheet" href="/styles/styleBasic.css" />
-    </header>
-    <nav id="menu">
-      <ul>
-        <li class="current"><a href="/pages/index.html">Accueil</a></li>
-        <li><a href="/pages/html.html">HTML</a></li>
-        <li><a href="/pages/css.html">CSS</a></li>
-        <li><a href="/pages/js.html">JAVA SCRIPT</a></li>
-        <li><a href="/pages/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <section id="card">
-      <div class="img">
-        <img src="/images/email.png" alt="  green email" />
+    <div class="nav">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header">
+        <div class="nav-logo">
+          <img
+            src="/images/Brighter Futures.png"
+            width="40px"
+            alt=""
+            srcset=""
+          />
+        </div>
       </div>
-      <form action="">
-        <div class="input-grp">
-          <label>Email</label>
-          <input type="email" name="" placeholder="Email" />
-        </div>
-        <div class="input-grp">
-          <label>Topic</label>
-          <input type="text" name="" placeholder="Topic" />
-        </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
 
-        <div class="input-grp">
-          <label>Content</label>
-          <textarea
-            name="paragraph_text"
-            placeholder="Content"
-            cols="50"
-            rows="10"
-          ></textarea>
+      <div class="nav-links">
+        <a href="/pages/home.html" target="_blank">Home</a>
+        <a href="/pages/html.html" target="_blank">HTML</a>
+        <a href="/pages/css.html" target="_blank">CSS</a>
+        <a href="/pages/js.html" target="_blank">JS</a>
+        <a href="/pages/contact.html" target="_blank">Contact Us</a>
+      </div>
+    </div>
+    <main>
+      <section id="card">
+        <div class="img">
+          <img src="/images/email.png" alt="  green email" />
         </div>
-        <div id="btn-container">
-          <button type="submit" id="btn-submit">Send</button>
-        </div>
-      </form>
-    </section>
+        <form action="">
+          <div class="input-grp">
+            <label>Email</label>
+            <input type="email" name="" placeholder="Email" />
+          </div>
+          <div class="input-grp">
+            <label>Topic</label>
+            <input type="text" name="" placeholder="Topic" />
+          </div>
+
+          <div class="input-grp">
+            <label>Content</label>
+            <textarea
+              name="paragraph_text"
+              placeholder="Content"
+              cols="50"
+              rows="10"
+            ></textarea>
+          </div>
+          <div id="btn-container">
+            <button type="submit" id="btn-submit">Send</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
     <footer>
       <div id="intro">made by Mehdi Ben Hariz ,Follow me:</div>
       <div id="social">
