@@ -1,0 +1,91 @@
+:root {
+  --main-color-1: #2bae66ff;
+  --main-color-2: #fcf6f5ff;
+}
+
+#list li:hover {
+  border: 1px solid var(--main-color-1);
+  background-color: var(--main-color-2);
+  color: var(--main-color-1);
+  transition: 0.5s;
+}
+/*styling the design picture*/
+
+#design {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+#design img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#techs {
+  display: grid;
+
+  gap: 10px;
+}
+
+.tech-card {
+  background-color: rgb(214, 248, 205);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.tech-card:hover {
+  box-shadow: 4px 4px 4px 2px rgba(39, 41, 39, 0.2);
+}
+.tech-card img {
+  object-fit: fill;
+}
+
+/*styling the meme gif*/
+#meme {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#meme div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 3o0px;
+  overflow: hidden;
+}
+
+#meme div img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*styling the cards*/
+.card {
+  background-color: #282a35;
+}
+
+/*the media query*/
+@media only screen and (max-width: 800px) {
+  #techs {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  #techs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+}
