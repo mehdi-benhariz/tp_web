@@ -1,0 +1,38 @@
+:root {
+  --main-color-1: #2bae66ff;
+  --main-color-2: #fcf6f5ff;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  animation: dropIn 1s ease forwards;
+  color: white;
+
+  background: #cac531; /* fallback for old browsers */
+  background: #fffc00; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #fffc00
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #fffc00
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 1rem 4rem;
+  border-radius: 25px;
+}
+
+@keyframes dropIn {
+  from {
+    transform: translateY(-500px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
