@@ -94,7 +94,7 @@
 /* button effect */
 .btn-learn {
   background-color: var(--main-color-1);
-  padding: 8px 70px;
+  padding: 8px 40px;
 
   border-radius: 10px;
   font-size: large;

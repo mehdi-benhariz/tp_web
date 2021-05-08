@@ -14,7 +14,10 @@ a {
   height: 50px;
   width: 100%;
   background-color: var(--main-color-1);
-  position: relative;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .nav > .nav-header {
@@ -89,13 +92,12 @@ a {
   }
   .nav > .nav-links > a {
     display: block;
-    width: 100%;
   }
   .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(60vh - 50px);
+    height: calc(60vh - 120px);
     overflow-y: auto;
   }
 }
