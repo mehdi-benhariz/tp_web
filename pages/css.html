@@ -44,33 +44,41 @@
         <div id="title">
           <h1>CSS</h1>
         </div>
- <div id="design">
-          <img src="/images/css-illustration.jpg" alt="illustration for css" srcset="" />
+        <div id="design">
+          <img
+            src="/images/css-illustration.jpg"
+            alt="illustration for css"
+            srcset=""
+          />
         </div>
       </section>
       <section id="top">
         <div id="defini">
           <div class="dev-card">
-            <h2>HTML</h2>
+            <h2>CSS</h2>
             <p>
-              HTML is the standard markup language for Web pages. With HTML you
-              can create your own Website.
+              CSS is the language we use to style an HTML document. CSS
+              describes how HTML elements should be displayed.
             </p>
           </div>
           <div class="dev-card">
-            <h2>Tags</h2>
+            <h2>selectors</h2>
             <p>
-              Tags are the core element of an html file,when we open a tag we
-              need to close it. whitin the tags we incert the contetnt
+              Selectors are the way to specify which elements to style. we can
+              select by id, class or element. the id is unique but the class can
+              be attached to multiple element and the element selector will
+              apply the style to all element.
             </p>
           </div>
           <div class="dev-card">
             <h2>Structure</h2>
             <p>
-              we start to open the <span>&lt;html> &lt;/html> </span> , it's
-              composed of <span>&lt;head> &lt;/head></span> where we spcify
-              title and other parameter, and a
-              <span>&lt;body> &lt;body> </span> where our content goes
+              we start to specify the selctor <mark>.</mark> for a class ,<mark
+                >#</mark
+              >
+              for an id and the name of the element in case of element selector,
+              we open <mark>{}</mark> and we tape : <br />
+              <mark> proprity</mark>: <mark>value</mark> ;
             </p>
           </div>
         </div>
@@ -79,39 +87,40 @@
             <li>
               <details>
                 <summary>
-                  Headers
+                  Colors
                   <a href="#headers"
                     ><i class="fas fa-arrow-circle-down"></i
                   ></a>
                 </summary>
                 <ul>
-                  <li>importance of h1</li>
-                  <li>others</li>
+                  <li>litteral</li>
+                  <li>rgb</li>
+                  <li>hexa</li>
                 </ul>
               </details>
             </li>
             <li>
               <details>
                 <summary>
-                  list
+                  padding VS margin
                   <a href="#list"> <i class="fas fa-arrow-circle-down"></i></a>
                 </summary>
                 <ul>
-                  <li>unord#63596A list</li>
-                  <li>ord#63596A list</li>
-                  <li>list item</li>
+                  <li>margin</li>
+                  <li>padding</li>
                 </ul>
               </details>
             </li>
             <li>
               <details>
                 <summary>
-                  DIV vs P
+                  border
                   <a href="#text"><i class="fas fa-arrow-circle-down"></i></a>
                 </summary>
                 <ul>
-                  <li>div</li>
-                  <li>p</li>
+                  <li>type</li>
+                  <li>color</li>
+                  <li>thick</li>
                 </ul>
               </details>
             </li>
@@ -147,268 +156,30 @@
         </div>
       </section>
       <section>
-        <div>
-          <div id="header">
-            <h3>Headers</h3>
-        <p>
-              an img is a tag to display an image inside the page.<br />
-              the src is used to indicate the location of the element inside our
-              working directory.<br />
-              the alt is used as alternative to the image , the browser will
-              display it in case of problem or when displaying toprople with
-              special needs.
-            </p>     <div class="example" style=" padding: 3%">
-              <span
-                ><span class="code-1">&lt;</span>!DOCTYPE<span
-                  class="code-2"
-                >
-                  html</span
-                ><span class="code-1">&gt;</span></span
-              ><br />
-              <span
-                ><span class="code-1">&lt;</span>html<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              ><br />
-
-              <span
-                ><span class="code-1">&lt;</span>body<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              ><br /><br />
-              <span
-                ><span class="code-1">&lt;</span>img<span
-                  class="code-1"
-                  ><span class="code-3" > src</span>  ="./image/rabbit.jpg"  <span class="code-3" >alt</span> ="an image of a rabbit"     &gt;</span
-                ></span
-              ></span
-              ><br />
-              <br />
-              <img src="" alt="" srcset="">
-              <span
-                ><span class="code-1">&lt;</span>/body<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              ><br />
-              <span
-                ><span class="code-1">&lt;</span>/html<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              >
-            </div>          </div>
-          <div id="list">
-            <h3>List</h3>
-        <p>
-              an img is a tag to display an image inside the page.<br />
-              the src is used to indicate the location of the element inside our
-              working directory.<br />
-              the alt is used as alternative to the image , the browser will
-              display it in case of problem or when displaying toprople with
-              special needs.
-            </p>     <div class="example" style="padding: 3%">
-              <span
-                ><span class="code-1">&lt;</span>!DOCTYPE<span
-                  class="code-2"
-                >
-                  html</span
-                ><span class="code-1">&gt;</span></span
-              ><br />
-              <span
-                ><span class="code-1">&lt;</span>html<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              ><br />
-
-              <span
-                ><span class="code-1">&lt;</span>body<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              ><br /><br />
-              <span
-                ><span class="code-1">&lt;</span>img<span
-                  class="code-1"
-                  ><span class="code-3" > src</span>  ="./image/rabbit.jpg"  <span class="code-3" >alt</span> ="an image of a rabbit"     &gt;</span
-                ></span
-              ></span
-              ><br />
-              <br />
-              <img src="" alt="" srcset="">
-              <span
-                ><span class="code-1">&lt;</span>/body<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              ><br />
-              <span
-                ><span class="code-1">&lt;</span>/html<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              >
-            </div>          </div>
-          <div id="text">
-            <h3>Div vs P</h3>
-        <p>
-              an img is a tag to display an image inside the page.<br />
-              the src is used to indicate the location of the element inside our
-              working directory.<br />
-              the alt is used as alternative to the image , the browser will
-              display it in case of problem or when displaying toprople with
-              special needs.
-            </p>     <div class="example" style=" padding: 3%">
-              <span
-                ><span class="code-1">&lt;</span>!DOCTYPE<span
-                  class="code-2"
-                >
-                  html</span
-                ><span class="code-1">&gt;</span></span
-              ><br />
-              <span
-                ><span class="code-1">&lt;</span>html<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              ><br />
-
-              <span
-                ><span class="code-1">&lt;</span>body<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              ><br /><br />
-              <span
-                ><span class="code-1">&lt;</span>img<span
-                  class="code-1"
-                  ><span class="code-3" > src</span>  ="./image/rabbit.jpg"  <span class="code-3" >alt</span> ="an image of a rabbit"     &gt;</span
-                ></span
-              ></span
-              ><br />
-              <br />
-              <img src="" alt="" srcset="">
-              <span
-                ><span class="code-1">&lt;</span>/body<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              ><br />
-              <span
-                ><span class="code-1">&lt;</span>/html<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              >
-            </div>          </div>
-          <div id="highlight">
-            <h3>highlight</h3>
-        <p>
-              an img is a tag to display an image inside the page.<br />
-              the src is used to indicate the location of the element inside our
-              working directory.<br />
-              the alt is used as alternative to the image , the browser will
-              display it in case of problem or when displaying toprople with
-              special needs.
-            </p>     <div class="example" style=" padding: 3%">
-              <span
-                ><span class="code-1">&lt;</span>!DOCTYPE<span
-                  class="code-2"
-                >
-                  html</span
-                ><span class="code-1">&gt;</span></span
-              ><br />
-              <span
-                ><span class="code-1">&lt;</span>html<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              ><br />
-
-              <span
-                ><span class="code-1">&lt;</span>body<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              ><br /><br />
-              <span
-                ><span class="code-1">&lt;</span>img<span
-                  class="code-1"
-                  ><span class="code-3" > src</span>  ="./image/rabbit.jpg"  <span class="code-3" >alt</span> ="an image of a rabbit"     &gt;</span
-                ></span
-              ></span
-              ><br />
-              <br />
-              <img src="" alt="" srcset="">
-              <span
-                ><span class="code-1">&lt;</span>/body<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              ><br />
-              <span
-                ><span class="code-1">&lt;</span>/html<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              >
-            </div>          </div>
-          <div id="image">
-            <h3>image</h3>
+        <div id="dev-card">
+          <div class="info" style="grid-area: info">
+            <h2>colors</h2>
             <p>
-              an img is a tag to display an image inside the page.<br />
-              the src is used to indicate the location of the element inside our
-              working directory.<br />
-              the alt is used as alternative to the image , the browser will
-              display it in case of problem or when displaying toprople with
-              special needs.
+              we color the content or the background , we use litteral
+              expressions,rgb or hexadecimal code.
             </p>
-            <div class="example" style=" padding: 3%">
-              <span
-                ><span class="code-1">&lt;</span>!DOCTYPE<span
-                  class="code-2"
-                >
-                  html</span
-                ><span class="code-1">&gt;</span></span
-              ><br />
-              <span
-                ><span class="code-1">&lt;</span>html<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              ><br />
 
-              <span
-                ><span class="code-1">&lt;</span>body<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              ><br /><br />
-              <span
-                ><span class="code-1">&lt;</span>img<span
-                  class="code-1"
-                  ><span class="code-3" > src</span>  ="./image/rabbit.jpg"  <span class="code-3" >alt</span> ="an image of a rabbit"     &gt;</span
-                ></span
-              ></span
-              ><br />
-              <br />
-              <img src="" alt="" srcset="">
-              <span
-                ><span class="code-1">&lt;</span>/body<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              ><br />
-              <span
-                ><span class="code-1">&lt;</span>/html<span
-                  class="code-1"
-                  >&gt;</span
-                ></span
-              >
+            <h2>padding vs margin</h2>
+            <p>
+              we color the content or the background , we use litteral
+              expressions,rgb or hexadecimal code.
+            </p>
+          </div>
+          <div class="code" style="grid-area: code">
+            <h4>try this code:</h4>
+            <div id="test-code">
+              <input type="text" onchange="handlChange1()" id="input1" />:
+              <input type="text" onchange="handlChange2()" id="input2" /> ;
             </div>
+          </div>
+          <div class="result" style="grid-area: result">
+            <h4>the result:</h4>
+            <p id="test">this is a testing element</p>
           </div>
         </div>
       </section>
@@ -431,6 +202,14 @@
         </a>
       </div>
     </footer>
+    <script>
+      const test = document.querySelector("#test");
+      let input1 = document.querySelector("#input1");
+      let input2 = document.querySelector("#input2");
+
+      const handlChange1 = (handlChange2 = () =>
+        (test.style[input1.value] = input2.value));
+    </script>
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"

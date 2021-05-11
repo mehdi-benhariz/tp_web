@@ -50,13 +50,7 @@ h1 {
 }
 section:nth-child(2) {
   background-color: rgb(204, 201, 201);
-}
-
-.dev-card {
-  margin: 1rem;
-  border-radius: 10px;
-  background-color: #e7e9eb;
-  padding: 0.5rem 1rem;
+  padding: 2px;
 }
 
 p {
@@ -98,7 +92,7 @@ summary:hover > a {
   color: var(--main-color-1);
 }
 
-section:nth-child(3) div {
+section:nth-child(3) {
   background-color: #e7e9eb;
   border-radius: 10px;
   padding: 10px;
@@ -106,28 +100,13 @@ section:nth-child(3) div {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.example {
-  background-color: #282a35 !important;
-  color: white;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+#test-code input {
+  padding: 6px 1px;
 }
-.example span {
-  color: #f49494;
+#test-code input:focus {
+  outline: none;
+  border: none;
 }
-
-.code-1 {
-  color: #73aa9e !important;
-}
-.code-2 {
-  color: #63596a !important;
-}
-
-.code-3 {
-  color: #726478 !important;
-}
-
 @media (min-width: 701px) {
   section:nth-child(2) {
     display: grid;
@@ -138,6 +117,13 @@ section:nth-child(3) div {
     justify-content: space-evenly;
     height: 100%;
   }
+  #dev-card {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "info info" "code result";
+    gap: 4px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -145,5 +131,11 @@ section:nth-child(3) div {
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
+  }
+  #dev-card {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "info" "code" "result";
+    gap: 2px;
   }
 }
