@@ -54,14 +54,14 @@
       </section>
       <section id="top">
         <div id="defini">
-          <div class="dev-card">
+          <div class="general">
             <h2>CSS</h2>
             <p>
               CSS is the language we use to style an HTML document. CSS
               describes how HTML elements should be displayed.
             </p>
           </div>
-          <div class="dev-card">
+          <div class="general">
             <h2>selectors</h2>
             <p>
               Selectors are the way to specify which elements to style. we can
@@ -70,7 +70,7 @@
               apply the style to all element.
             </p>
           </div>
-          <div class="dev-card">
+          <div class="general">
             <h2>Structure</h2>
             <p>
               we start to specify the selctor <mark>.</mark> for a class ,<mark
@@ -88,9 +88,7 @@
               <details>
                 <summary>
                   Colors
-                  <a href="#headers"
-                    ><i class="fas fa-arrow-circle-down"></i
-                  ></a>
+                  <a href="#colors"><i class="fas fa-arrow-circle-down"></i></a>
                 </summary>
                 <ul>
                   <li>litteral</li>
@@ -103,7 +101,7 @@
               <details>
                 <summary>
                   padding VS margin
-                  <a href="#list"> <i class="fas fa-arrow-circle-down"></i></a>
+                  <a href="#p-m"> <i class="fas fa-arrow-circle-down"></i></a>
                 </summary>
                 <ul>
                   <li>margin</li>
@@ -115,7 +113,7 @@
               <details>
                 <summary>
                   border
-                  <a href="#text"><i class="fas fa-arrow-circle-down"></i></a>
+                  <a href="#border"><i class="fas fa-arrow-circle-down"></i></a>
                 </summary>
                 <ul>
                   <li>type</li>
@@ -128,27 +126,27 @@
             <li>
               <details>
                 <summary>
-                  Highlight
-                  <a href="#highlight"
-                    ><i class="fas fa-arrow-circle-down"></i
-                  ></a>
+                  font family,weight and size
+                  <a href="#fonts"><i class="fas fa-arrow-circle-down"></i></a>
                 </summary>
                 <ul>
-                  <li>em</li>
-                  <li>strong</li>
+                  <li>Font family</li>
+                  <li>Font weight</li>
+                  <li>Font size</li>
                 </ul>
               </details>
             </li>
             <li>
               <details>
                 <summary>
-                  Images
-                  <a href="#image"><i class="fas fa-arrow-circle-down"></i></a>
+                  Flex and Grid
+                  <a href="#flex-grid"
+                    ><i class="fas fa-arrow-circle-down"></i
+                  ></a>
                 </summary>
                 <ul>
-                  <li>src</li>
-                  <li>alt</li>
-                  <li>sizing</li>
+                  <li>Flex</li>
+                  <li>Grid</li>
                 </ul>
               </details>
             </li>
@@ -158,23 +156,80 @@
       <section>
         <div id="dev-card">
           <div class="info" style="grid-area: info">
-            <h2>colors</h2>
-            <p>
-              we color the content or the background , we use litteral
-              expressions,rgb or hexadecimal code.
-            </p>
-
-            <h2>padding vs margin</h2>
-            <p>
-              we color the content or the background , we use litteral
-              expressions,rgb or hexadecimal code.
-            </p>
+            <div id="colors">
+              <h2 style="grid-area: title">colors</h2>
+              <p style="grid-area: parag">
+                we color the content or the background , we use litteral
+                expressions,rgb or hexadecimal code.
+              </p>
+              <div style="grid-area: img" class="cover">
+                <img src="/images/code/css-color.png" alt="" />
+              </div>
+            </div>
+            <div id="p-m">
+              <h2 style="grid-area: title">padding vs margin</h2>
+              <p style="grid-area: parag">
+                we color the content or the background , we use litteral
+                expressions,rgb or hexadecimal code.
+              </p>
+              <div style="grid-area: img" class="cover">
+                <img src="/images/code/code-p-m.png" alt="" />
+              </div>
+            </div>
+            <div id="border">
+              <h2 style="grid-area: title">border</h2>
+              <p style="grid-area: parag">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem laboriosam quam provident quas alias delectus facere
+                quae quasi. Eos illum modi excepturi asperiores dicta iste
+                nesciunt placeat rerum, facilis reiciendis.
+              </p>
+              <div style="grid-area: img" class="cover">
+                <img src="/images/code/code-border.png" alt="" />
+              </div>
+            </div>
+            <div id="fonts">
+              <h2 style="grid-area: title">font family,weight and size</h2>
+              <p style="grid-area: parag">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Perferendis molestias sequi earum exercitationem magnam
+                incidunt, accusamus obcaecati amet ipsum laborum nam asperiores
+                possimus praesentium placeat dolorum quidem natus dolorem
+                veniam?
+              </p>
+              <div class="cover" style="grid-area: img">
+                <img src="/images/code/code-fonts.png" alt="" />
+              </div>
+            </div>
+            <div id="flex-grid">
+              <h2 style="grid-area: title">Flex and Grid</h2>
+              <p style="grid-area: parag">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam,
+                explicabo dolor. Perferendis quae, quisquam beatae obcaecati
+                labore a, iusto perspiciatis nesciunt impedit sequi praesentium
+                magnam accusantium doloribus. Quas, delectus aliquid.
+              </p>
+              <div style="grid-area: img" class="cover">
+                <img src="/images/code/code-flex-grid.png" alt="" />
+              </div>
+            </div>
           </div>
           <div class="code" style="grid-area: code">
             <h4>try this code:</h4>
             <div id="test-code">
-              <input type="text" onchange="handlChange1()" id="input1" />:
-              <input type="text" onchange="handlChange2()" id="input2" /> ;
+              <input
+                type="text"
+                onchange="handlChange()"
+                id="input1"
+                placeholder="propriety"
+              />:
+              <input
+                type="text"
+                onchange="handlChange()"
+                id="input2"
+                placeholder="value"
+              />
+              ;
             </div>
           </div>
           <div class="result" style="grid-area: result">
@@ -186,7 +241,7 @@
     </main>
 
     <footer>
-      <div id="intro">made by Mehdi Ben Hariz ,Follow me:</div>
+      <div id="intro">Made by Mehdi Ben Hariz ,Follow me:</div>
       <div id="social">
         <a href="#" class="social-icon">
           <i class="fab fa-facebook-f"></i>
@@ -207,8 +262,7 @@
       let input1 = document.querySelector("#input1");
       let input2 = document.querySelector("#input2");
 
-      const handlChange1 = (handlChange2 = () =>
-        (test.style[input1.value] = input2.value));
+      const handlChange = () => (test.style[input1.value] = input2.value);
     </script>
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
